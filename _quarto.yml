@@ -9,7 +9,7 @@ book:
   title: "Mapping Politics: Spatial Data Science for Politics"
   author: "Dr Clemens Jarnach"
   date: "10/11/2025"
-  repo-url: https://clemensjarnach.github.io/mapping-politics
+  repo-url: https://clemensjarnach.github.io/mapping-politics/
   chapters:
     - index.qmd
     - results.qmd
@@ -31,6 +31,7 @@ format:
     code-tools: true
     code-link: true
     code-copy: true
+    split-by: chapter  
     knitr:
       opts_chunk:
         out.width: 100%
