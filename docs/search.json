@@ -30,16 +30,6 @@
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Tobler, W. R. 1970. “A Computer Movie Simulating Urban\nGrowth in the Detroit Region.” Economic\nGeography 46 (June): 234. https://doi.org/10.2307/143141.",
-    "crumbs": [
-      "References"
-    ]
-  },
-  {
     "objectID": "results.html",
     "href": "results.html",
     "title": "1  Results - Mapping UK General Elections (2010–2024)",
@@ -137,6 +127,16 @@
     "text": "Because spatial data violate key assumptions of standard regression frameworks, particularly the independence of observations, dedicated network- or spatial-methods are essential both for valid inference and substantive insight. Dedicated spatial and network methods therefore play a dual role: not only do they correct statistical bias, but they also enable us to detect and model complex interdependencies that would otherwise remain hidden.\nSpatial analysis helps reveal how support for policies diffuses, why certain regions diverge from national trajectories, and how local context shapes outcomes.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods - Spatial Regression</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Tobler, W. R. 1970. “A Computer Movie Simulating Urban\nGrowth in the Detroit Region.” Economic\nGeography 46 (June): 234. https://doi.org/10.2307/143141.",
+    "crumbs": [
+      "References"
     ]
   }
 ]
