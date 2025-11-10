@@ -1,0 +1,5 @@
+# Spatial Regression
+
+Because spatial data violate key assumptions of standard regression frameworks, particularly the independence of observations, dedicated network- or spatial-methods are essential both for valid inference and substantive insight. Dedicated spatial and network methods therefore play a dual role: not only do they correct statistical bias, but they also enable us to detect and model complex interdependencies that would otherwise remain hidden.
+
+Spatial analysis helps reveal how support for policies diffuses, why certain regions diverge from national trajectories, and how local context shapes outcomes.

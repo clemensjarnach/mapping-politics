@@ -23,7 +23,7 @@ This project is designed to demonstrate and teach how to:
 ## Contents
 
 | Section | Focus |
-|----|----|
+|----------------------|--------------------------------------------------|
 | **Results - Elections Visualised** | Key maps and insights at a glance |
 | **Methods – Visualising Elections** | Data sources, processing steps, reproducibility notes |
 | **Spatial Regression** | Clean, well-commented code for Spatial Regression workflows in R |

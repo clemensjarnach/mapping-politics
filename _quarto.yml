@@ -12,10 +12,10 @@ book:
   repo-url: https://github.com/clemensjarnach/elections-visualised
   chapters:
     - index.qmd
-    # - results.qmd
-    # - methods.qmd
-    # - spatial-regression.qmd
-    # - references.qmd
+    - results.qmd
+    - methods.qmd
+    - spatial-regression.qmd
+    - references.qmd
 
 bibliography: references.bib
 

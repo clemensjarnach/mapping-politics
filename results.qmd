@@ -1,0 +1,231 @@
+# Results - Elections Visualised
+
+## Five UK General Elections Compared
+
+```{r setup}
+#| include: false
+source("analysis.R")
+```
+
+This is a data-driven exploration of **United Kingdom General Elections from 2010 to 2024** Through interactive maps, comparative visualizations, and reproducible code, it explores how Britain's electoral geography has transformed over the course of 14 years of political turmoil, from coalition government to Brexit and finally to Labour's landslide victory in 2024.
+
+## Who won in which area?
+
+Explore how political power has shifted across UK constituencies over time. Click on each tab to see which party won in each election year. Hover over a constituency to see its detailed results and compare the geographic changes that unfolded election by election.
+
+::: panel-tabset
+### 2010
+
+```{r}
+#| echo: false
+map_interactive_2010
+```
+
+**Coalition Politics**: No single party achieved a majority. The resulting Conservative-Liberal Democrat coalition was the first in Britain since 1945.
+
+### 2015
+
+```{r}
+#| echo: false
+map_interactive_2015
+```
+
+**The SNP Surge**: Scotland turned yellow as the SNP swept from 6 to 56 seats, while the Liberal Democrats collapsed from 57 to just 8 seats following the coalition years.
+
+### 2017
+
+```{r}
+#| echo: false
+map_interactive_2017
+```
+
+**Brexit Stalemate**: Theresa May's snap election backfired, losing the Conservative majority and another hung parliament which produced gridlock and a government dependent on DUP support.
+
+### 2019
+
+```{r}
+#| echo: false
+map_interactive_2019
+```
+
+**"Get Brexit Done"**: Boris Johnson's "Get Brexit Done" campaign delivered the largest Conservative majority since 1987.
+
+### 2024 {.active}
+
+```{r}
+#| echo: false
+map_interactive_2024
+```
+
+**Historic Realignment**: Labour's landslide victory masked a fragmented electorate—the lowest winning vote share for a majority government in British history.
+:::
+
+## Seat Distribution: The Story in Numbers
+
+These bar charts reveal the stark differences between elections. Notice how the Conservative majority in 2015 gave way to a hung parliament in 2017, followed by a landslide in 2019, before a dramatic reversal in 2024.
+
+::: panel-tabset
+### 2010
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 6
+plot_i_2010
+```
+
+**Result**: Hung parliament (326 seats needed for majority)\
+**Government**: Conservative-Liberal Democrat coalition\
+**Consequence**: First coalition government since WWII era
+
+The 2010 election produced Britain's first hung parliament since 1974. With Conservatives on 306 seats and Labour on 258, neither could govern alone. The resulting Conservative-Liberal Democrat coalition—Britain's first peacetime coalition since 1945—implemented aggressive austerity measures that would reshape public services and define a decade of politics.[^results-1]
+
+### 2015
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 6
+plot_i_2015
+```
+
+**Result**: Conservative majority (with 12-seat margin as 326 seats were needed to win)\
+**Shock**: SNP won 56 of 59 Scottish seats; Lib Dems reduced to 8\
+**Consequence**: EU referendum pledge activated
+
+David Cameron's Conservatives defied polls to win an outright majority—but the real story was Scotland with the SNP's surge from 6 to 56 seats. The Liberal Democrats, punished for coalition compromises, collapsed from 57 seats to 8. Cameron's victory came with a promise: an EU referendum.[^results-2]
+
+### 2017
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 6
+plot_i_2017
+```
+
+**Result**: Hung parliament\
+**Irony**: Both major parties increased their vote share, but neither won a majority\
+**Consequence**: Parliamentary Brexit deadlock for two years
+
+Theresa May called a snap election seeking a mandate for her Brexit negotiations. Instead, she lost her majority. Both major parties increased their vote share, yet produced a hung parliament. The result: two years of parliamentary paralysis, and several failed Brexit votes.[^results-3]
+
+### 2019
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 6
+plot_i_2019
+```
+
+**Result**: Conservative majority (80-seat margin)\
+**Breakthrough**: "Red Wall" constituencies switched to Conservative\
+**Consequence**: Brexit delivered January 2020
+
+Boris Johnson broke the parliamentary deadlock with a blunt and effective message: “Get Brexit Done.” The result was emphatic: an 80-seat Conservative majority driven largely by gains in former Labour heartlands. The so-called Red Wall (long-standing Labour constituencies across the North of England, the Midlands, and Wales) shifted Conservative after generations of loyalty. Brexit was formally completed in January 2020, but the electoral realignment it revealed reshaped Britain's political geography and would continue to influence voting patterns well beyond that moment.[^results-4]
+
+### 2024 {.active}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 6
+plot_i_2024
+```
+
+**Result**: Labour landslide (174-seat majority)\
+**Historic low**: Conservatives reduced to 121 seats—their worst result ever\
+**Consequence**: Lib Dems' best performance since 2010 with 72 seats
+
+Labour won a massive 174-seat majority, but with just 33.7% of the vote, the lowest share ever for a majority-winning party. The Conservatives suffered their worst defeat in history, reduced to 121 seats. But the headline story was fragmentation: the two main parties' combined vote share fell to 57.4%, the lowest in modern history. Reform UK, the Greens, and the Liberal Democrats all gained ground. Britain's two-party system, already cracking, may have broken for good.[^results-5]
+:::
+
+[^results-1]: House of Commons Library, *General Election 2010*, <https://commonslibrary.parliament.uk/research-briefings/sn06404/>
+
+[^results-2]: House of Commons Library, *General Election 2015*, <https://commonslibrary.parliament.uk/research-briefings/cbp-7186/>
+
+[^results-3]: House of Commons Library, *General Election 2017*, <https://commonslibrary.parliament.uk/research-briefings/cbp-7979/>
+
+[^results-4]: House of Commons Library, *General Election 2019*, <https://commonslibrary.parliament.uk/research-briefings/cbp-8749/>
+
+[^results-5]: House of Commons Library, *General Election 2024*, <https://commonslibrary.parliament.uk/research-briefings/cbp-10009/>
+
+## Votes vs Seats
+
+The contrast between these two charts — one showing seat distribution across the last five general elections and the other illustrating vote share — highlights a central feature of Britain’s first-past-the-post electoral system. Vote share reveals public opinion; seat distribution reveals who governs.
+
+::: panel-tabset
+### Seats
+
+```{r}
+#| echo: false
+#| fig-width: 12
+#| fig-height: 7
+plot(seat_counts_plot)
+```
+
+### Vote Share
+
+```{r}
+#| echo: false
+#| fig-width: 12
+#| fig-height: 7
+plot(vote_share_plot)
+```
+:::
+
+Particularity interesting is the the election in 2024, Labour increased their vote share by just 1.6 percentage points (32.1% → 33.7%) yet more than doubled their seats (202 → 411). Meanwhile, the Liberal Democrats achieved 12.2% of the national vote but won only 11% of seats. This geographic concentration effect is a defining feature of first-past-the-post: victory depends not on total votes, but on winning individual constituencies. The SNP demonstrates this perfectly, with under 4% of the UK vote in 2015 and 2019, they secured 8-9% of seats by dominating Scotland.
+
+## Data Table
+
+The table below summarises the data already visualised in the preceding figures, showing seat distribution and vote shares for the top four political parties in UK general elections from 2010 to 2024. By examining the numbers, it becomes clear how votes translate into parliamentary seats under the first-past-the-post system, highlighting both the overall level of support received by each party and the disparities that sometimes occur between vote share and seat allocation.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+seats_table %>%
+mutate(
+seats_share = seats_share * 100  # convert to percentage scale
+) %>%
+gt() %>%
+tab_header(
+title = "UK General Election Results (2010–2024)"
+) %>%
+fmt_number(
+columns = c(vote_share, seats_share),
+decimals = 1,
+suffixing = FALSE
+) %>%
+text_transform(
+locations = cells_body(columns = c(vote_share, seats_share)),
+fn = function(x) paste0(x, "%")
+) %>%
+cols_label(
+election = "Election",
+party = "Party",
+seats = "Seats",
+total_votes = "Total Votes",
+vote_share = "Vote Share",
+seats_share = "Seats Share",
+seats_change = "Seat Change"
+)
+
+
+```
+
+## Technical Notes
+
+All data used in this analysis are publicly available. Election results come from the House of Commons Library, while constituency boundary information is provided by the Office for National Statistics (ONS), using shapefiles for December 2021 and July 2024. These sources allow for a consistent and reliable combination of electoral and spatial data.
+
+Chapter \# will provide a detailed walkthrough of the data cleaning and processing steps, showing how the figures and tables presented here were produced and ensuring the analysis is fully reproducible.
+
+**Data Sources**:\
+- House of Commons Library election results (1918-2024)\
+- ONS constituency boundary shapefiles (December 2021, July 2024)
+
+**Methods**:\
+- Spatial analysis using R packages - All analysis is fully reproducible with code available on GitHub

@@ -1,0 +1,12 @@
+# Methods - Visualising Elections
+
+## Why geospatial analysis?
+
+Political change is spatial. Electoral outcomes are shaped by place — communities, demographics, and identities linked to geography. Mapping makes these shifts legible, bringing together:
+
+-   data science
+-   visual communication
+-   political analysis
+-   reproducibility and open research
+
+This project illustrates how spatial analytics can enrich research in political sociology and public policy.
