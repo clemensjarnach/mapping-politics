@@ -21,7 +21,7 @@ bibliography: references.bib
 
 format:
   html:
-    number-depth: 1
+    number-depth: 3
     theme: cosmo
     highlight-style: atom-one
     code-block-bg: "#f0f0f0"
@@ -31,7 +31,6 @@ format:
     code-tools: true
     code-link: true
     code-copy: true
-  #  split-by: chapter  
     knitr:
       opts_chunk:
         out.width: 100%
