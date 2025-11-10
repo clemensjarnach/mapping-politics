@@ -1,2 +1,55 @@
-/.quarto/
+# R
+.Rhistory
+.RData
 .Rproj.user
+.Ruserdata
+.Rproj*
+.Renv
+.Rprofile
+
+
+# Quarto / Markdown
+*.html
+*.pdf
+*.docx
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Large files
+# Shapefiles and geographic data
+data/*.shp
+data/*.shx
+data/*.dbf
+data/*.prj
+data/*.cpg
+data/*.xml
+data/*.sbn
+data/*.sbx
+
+# Large raw data folders
+data/Westminster_Parliamentary_Constituencies_2001_and_2005/
+data/Westminster_Parliamentary_Constituencies_Dec_2021_UK_BUC_2022_-1597611953006344616/
+data/Westminster_Parliamentary_Constituencies_July_2024_Boundaries_UK_BFC_8322311767861589132/
+data/HoC-GE2010-results-by-constituency/
+
+# Keep processed data (explicitly allow)
+!data/processed/
+!data/processed/*.rds
+
+
+# Python / Jupyter (if used in Quarto)
+__pycache__/
+.ipynb_checkpoints/
+
+# Quarto cache and render artefacts
+*_files/
+.cache/
+.qmd-cache/
+
+# Project-specific archive directory
+_archive/
+/.quarto/
+/solutions/
+/_freeze/
