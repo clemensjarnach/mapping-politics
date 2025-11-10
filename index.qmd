@@ -1,9 +1,45 @@
-# Mapping Politics: Elections & Geodata Visualised {.unnumbered}
+# Introduction {.unnumbered}
 
-This is a Quarto book.
+Many social, economic, and environmental processes are fundamentally spatial. Consequently, many questions in the social sciences require geographic/spatial data. Electoral behaviour, migration flows, or protest mobilisation often display strong spatial, and social-network clustering. What happens in one constituency or local area frequently shapes outcomes in nearby places. As articulated in @toblerComputerMovieSimulating1970's famous first law of geography,
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+> “everything is related to everything else, but near things are more related than distant things.” Such relationships may arise from spatial spillovers, diffusion processes, or shared contextual influences across neighbouring areas.
 
-```{r}
-1 + 1
-```
+Recognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. Transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.
+
+This project applies these principles to the case of UK general elections, illustrating how geospatial techniques and visual analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.
+
+This course material is designed to lay foundations for spatial analysis and practical application. It demonstrates spatial workflows, visualisation techniques and modelling strategies in R.
+
+## Goals
+
+This project is designed to demonstrate and teach how to:
+
+-   acquire, clean, and integrate election and geospatial data in R
+-   work effectively with spatial data using packages such as `sf`, `mapview`, `tmap`, `spatialreg` and `leaflet`
+-   produce high-quality static and interactive maps
+-   communicate complex political and spatial patterns clearly and analytically
+-   develop transparent and reproducible data-science workflows
+
+## Contents
+
+| Section | Focus |
+|----|----|
+| **Results - Elections Visualised** | Key maps and insights at a glance |
+| **Methods – Visualising Elections** | Data sources, processing steps, reproducibility notes |
+| **Spatial Regression** | Clean, well-commented code for Spatial Regression workflows in R |
+| **Extras** | Additional resources, code appendix |
+| **References** | Data and literature sources |
+
+The section **Results - Elections Visualised** presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.
+
+The section **Methods - Visualising Elections** offers a structured, tutorial-style walkthrough of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, mapmaking, and exploratory spatial analysis.
+
+::: callout-note
+### Work in Progress
+
+This project is actively being developed. Additional sections and teaching materials will be added over time.
+
+For example, the Spatial Regression chapter, along with extended applied examples and exercises, will be released soon.
+
+If you are viewing this as part of a course or portfolio submission, please check back for updates as new content and learning resources are added.
+:::

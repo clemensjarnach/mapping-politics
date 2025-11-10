@@ -4,9 +4,29 @@
     "href": "index.html",
     "title": "Mapping Politics: Elections & Geodata Visualised",
     "section": "",
-    "text": "Mapping Politics: Elections & Geodata Visualised\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "text": "Introduction\nMany social, economic, and environmental processes are fundamentally spatial. Consequently, many questions in the social sciences require geographic/spatial data. Electoral behaviour, migration flows, or protest mobilisation often display strong spatial, and social-network clustering. What happens in one constituency or local area frequently shapes outcomes in nearby places. As articulated in (toblerComputerMovieSimulating1970?)’s famous first law of geography,\nRecognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. Transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.\nThis project applies these principles to the case of UK general elections, illustrating how geospatial techniques and visual analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.\nThis course material is designed to lay foundations for spatial analysis and practical application. It demonstrates spatial workflows, visualisation techniques and modelling strategies in R.",
     "crumbs": [
-      "Mapping Politics: Elections & Geodata Visualised"
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Mapping Politics: Elections & Geodata Visualised",
+    "section": "Goals",
+    "text": "Goals\nThis project is designed to demonstrate and teach how to:\n\nacquire, clean, and integrate election and geospatial data in R\nwork effectively with spatial data using packages such as sf, mapview, tmap, spatialreg and leaflet\nproduce high-quality static and interactive maps\ncommunicate complex political and spatial patterns clearly and analytically\ndevelop transparent and reproducible data-science workflows",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#contents",
+    "href": "index.html#contents",
+    "title": "Mapping Politics: Elections & Geodata Visualised",
+    "section": "Contents",
+    "text": "Contents\n\n\n\n\n\n\n\nSection\nFocus\n\n\n\n\nResults - Elections Visualised\nKey maps and insights at a glance\n\n\nMethods – Visualising Elections\nData sources, processing steps, reproducibility notes\n\n\nSpatial Regression\nClean, well-commented code for Spatial Regression workflows in R\n\n\nExtras\nAdditional resources, code appendix\n\n\nReferences\nData and literature sources\n\n\n\nThe section Results - Elections Visualised presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.\nThe section Methods - Visualising Elections offers a structured, tutorial-style walkthrough of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, mapmaking, and exploratory spatial analysis.\n\n\n\n\n\n\nWork in Progress\n\n\n\nThis project is actively being developed. Additional sections and teaching materials will be added over time.\nFor example, the Spatial Regression chapter, along with extended applied examples and exercises, will be released soon.\nIf you are viewing this as part of a course or portfolio submission, please check back for updates as new content and learning resources are added.",
+    "crumbs": [
+      "Introduction"
     ]
   }
 ]
