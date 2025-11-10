@@ -8,10 +8,6 @@
 .Rprofile
 
 
-# Quarto / Markdown
-*.html
-*.pdf
-*.docx
 
 # System files
 .DS_Store
