@@ -40,7 +40,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Quarto cache and render artefacts
-*_files/
+#*_files/
 .cache/
 .qmd-cache/
 
