@@ -31,7 +31,7 @@ format:
     code-tools: true
     code-link: true
     code-copy: true
-    split-by: chapter  
+  #  split-by: chapter  
     knitr:
       opts_chunk:
         out.width: 100%
