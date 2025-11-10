@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Mapping Politics: Elections & Geodata Visualised",
+    "title": "Mapping Politics: Spatial Data Science for Politics",
     "section": "",
     "text": "Introduction\nMany social, economic, and environmental processes are fundamentally spatial. Consequently, many questions in the social sciences require geographic/spatial data. Electoral behaviour, migration flows, or protest mobilisation often display strong spatial, and social-network clustering. What happens in one constituency or local area frequently shapes outcomes in nearby places. As articulated in Tobler (1970)’s famous first law of geography,\nRecognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. Transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.\nThis project applies these principles to the case of UK general elections, illustrating how geospatial techniques and visual analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.\nThis course material is designed to lay foundations for spatial analysis and practical application. It demonstrates spatial workflows, visualisation techniques and modelling strategies in R.",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#goals",
     "href": "index.html#goals",
-    "title": "Mapping Politics: Elections & Geodata Visualised",
+    "title": "Mapping Politics: Spatial Data Science for Politics",
     "section": "Goals",
     "text": "Goals\nThis project is designed to demonstrate and teach how to:\n\nacquire, clean, and integrate election and geospatial data in R\nwork effectively with spatial data using packages such as sf, mapview, tmap, spatialreg and leaflet\nproduce high-quality static and interactive maps\ncommunicate complex political and spatial patterns clearly and analytically\ndevelop transparent and reproducible data-science workflows",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#contents",
     "href": "index.html#contents",
-    "title": "Mapping Politics: Elections & Geodata Visualised",
+    "title": "Mapping Politics: Spatial Data Science for Politics",
     "section": "Contents",
     "text": "Contents\n\n\n\n\n\n\n\nSection\nFocus\n\n\n\n\nResults - Elections Visualised\nKey maps and insights at a glance\n\n\nMethods – Visualising Elections\nData sources, processing steps, reproducibility notes\n\n\nSpatial Regression\nClean, well-commented code for Spatial Regression workflows in R\n\n\nExtras\nAdditional resources, code appendix\n\n\nReferences\nData and literature sources\n\n\n\nThe section Results - Elections Visualised presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.\nThe section Methods - Visualising Elections offers a structured, tutorial-style walkthrough of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, mapmaking, and exploratory spatial analysis.\n\n\n\n\n\n\nWork in Progress\n\n\n\nThis project is actively being developed. Additional sections and teaching materials will be added over time.\nFor example, the Spatial Regression chapter, along with extended applied examples and exercises, will be released soon.\nIf you are viewing this as part of a course or portfolio submission, please check back for updates as new content and learning resources are added.\n\n\n\n\n\n\n\n\nTobler, W. R. 1970. “A Computer Movie Simulating Urban Growth in the Detroit Region.” Economic Geography 46 (June): 234. https://doi.org/10.2307/143141.",
     "crumbs": [
@@ -42,71 +42,71 @@
   {
     "objectID": "results.html",
     "href": "results.html",
-    "title": "1  Results - Elections Visualised",
+    "title": "1  Results - Mapping UK General Elections (2010–2024)",
     "section": "",
     "text": "Five UK General Elections Compared\nThis is a data-driven exploration of United Kingdom General Elections from 2010 to 2024 Through interactive maps, comparative visualizations, and reproducible code, it explores how Britain’s electoral geography has transformed over the course of 14 years of political turmoil, from coalition government to Brexit and finally to Labour’s landslide victory in 2024.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Elections Visualised</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
     ]
   },
   {
     "objectID": "results.html#who-won-in-which-area",
     "href": "results.html#who-won-in-which-area",
-    "title": "1  Results - Elections Visualised",
+    "title": "1  Results - Mapping UK General Elections (2010–2024)",
     "section": "Who won in which area?",
     "text": "Who won in which area?\nExplore how political power has shifted across UK constituencies over time. Click on each tab to see which party won in each election year. Hover over a constituency to see its detailed results and compare the geographic changes that unfolded election by election.\n\n20102015201720192024\n\n\n\n\n\n\n\n\nCoalition Politics: No single party achieved a majority. The resulting Conservative-Liberal Democrat coalition was the first in Britain since 1945.\n\n\n\n\n\n\n\n\nThe SNP Surge: Scotland turned yellow as the SNP swept from 6 to 56 seats, while the Liberal Democrats collapsed from 57 to just 8 seats following the coalition years.\n\n\n\n\n\n\n\n\nBrexit Stalemate: Theresa May’s snap election backfired, losing the Conservative majority and another hung parliament which produced gridlock and a government dependent on DUP support.\n\n\n\n\n\n\n\n\n“Get Brexit Done”: Boris Johnson’s “Get Brexit Done” campaign delivered the largest Conservative majority since 1987.\n\n\n\n\n\n\n\n\nHistoric Realignment: Labour’s landslide victory masked a fragmented electorate—the lowest winning vote share for a majority government in British history.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Elections Visualised</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
     ]
   },
   {
     "objectID": "results.html#seat-distribution-the-story-in-numbers",
     "href": "results.html#seat-distribution-the-story-in-numbers",
-    "title": "1  Results - Elections Visualised",
+    "title": "1  Results - Mapping UK General Elections (2010–2024)",
     "section": "Seat Distribution: The Story in Numbers",
     "text": "Seat Distribution: The Story in Numbers\nThese bar charts reveal the stark differences between elections. Notice how the Conservative majority in 2015 gave way to a hung parliament in 2017, followed by a landslide in 2019, before a dramatic reversal in 2024.\n\n20102015201720192024\n\n\n\n\n\n\n\n\nResult: Hung parliament (326 seats needed for majority)\nGovernment: Conservative-Liberal Democrat coalition\nConsequence: First coalition government since WWII era\nThe 2010 election produced Britain’s first hung parliament since 1974. With Conservatives on 306 seats and Labour on 258, neither could govern alone. The resulting Conservative-Liberal Democrat coalition—Britain’s first peacetime coalition since 1945—implemented aggressive austerity measures that would reshape public services and define a decade of politics.1\n\n\n\n\n\n\n\n\nResult: Conservative majority (with 12-seat margin as 326 seats were needed to win)\nShock: SNP won 56 of 59 Scottish seats; Lib Dems reduced to 8\nConsequence: EU referendum pledge activated\nDavid Cameron’s Conservatives defied polls to win an outright majority—but the real story was Scotland with the SNP’s surge from 6 to 56 seats. The Liberal Democrats, punished for coalition compromises, collapsed from 57 seats to 8. Cameron’s victory came with a promise: an EU referendum.2\n\n\n\n\n\n\n\n\nResult: Hung parliament\nIrony: Both major parties increased their vote share, but neither won a majority\nConsequence: Parliamentary Brexit deadlock for two years\nTheresa May called a snap election seeking a mandate for her Brexit negotiations. Instead, she lost her majority. Both major parties increased their vote share, yet produced a hung parliament. The result: two years of parliamentary paralysis, and several failed Brexit votes.3\n\n\n\n\n\n\n\n\nResult: Conservative majority (80-seat margin)\nBreakthrough: “Red Wall” constituencies switched to Conservative\nConsequence: Brexit delivered January 2020\nBoris Johnson broke the parliamentary deadlock with a blunt and effective message: “Get Brexit Done.” The result was emphatic: an 80-seat Conservative majority driven largely by gains in former Labour heartlands. The so-called Red Wall (long-standing Labour constituencies across the North of England, the Midlands, and Wales) shifted Conservative after generations of loyalty. Brexit was formally completed in January 2020, but the electoral realignment it revealed reshaped Britain’s political geography and would continue to influence voting patterns well beyond that moment.4\n\n\n\n\n\n\n\n\nResult: Labour landslide (174-seat majority)\nHistoric low: Conservatives reduced to 121 seats—their worst result ever\nConsequence: Lib Dems’ best performance since 2010 with 72 seats\nLabour won a massive 174-seat majority, but with just 33.7% of the vote, the lowest share ever for a majority-winning party. The Conservatives suffered their worst defeat in history, reduced to 121 seats. But the headline story was fragmentation: the two main parties’ combined vote share fell to 57.4%, the lowest in modern history. Reform UK, the Greens, and the Liberal Democrats all gained ground. Britain’s two-party system, already cracking, may have broken for good.5",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Elections Visualised</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
     ]
   },
   {
     "objectID": "results.html#votes-vs-seats",
     "href": "results.html#votes-vs-seats",
-    "title": "1  Results - Elections Visualised",
+    "title": "1  Results - Mapping UK General Elections (2010–2024)",
     "section": "Votes vs Seats",
     "text": "Votes vs Seats\nThe contrast between these two charts — one showing seat distribution across the last five general elections and the other illustrating vote share — highlights a central feature of Britain’s first-past-the-post electoral system. Vote share reveals public opinion; seat distribution reveals who governs.\n\nSeatsVote Share\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticularity interesting is the the election in 2024, Labour increased their vote share by just 1.6 percentage points (32.1% → 33.7%) yet more than doubled their seats (202 → 411). Meanwhile, the Liberal Democrats achieved 12.2% of the national vote but won only 11% of seats. This geographic concentration effect is a defining feature of first-past-the-post: victory depends not on total votes, but on winning individual constituencies. The SNP demonstrates this perfectly, with under 4% of the UK vote in 2015 and 2019, they secured 8-9% of seats by dominating Scotland.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Elections Visualised</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
     ]
   },
   {
     "objectID": "results.html#data-table",
     "href": "results.html#data-table",
-    "title": "1  Results - Elections Visualised",
+    "title": "1  Results - Mapping UK General Elections (2010–2024)",
     "section": "Data Table",
     "text": "Data Table\nThe table below summarises the data already visualised in the preceding figures, showing seat distribution and vote shares for the top four political parties in UK general elections from 2010 to 2024. By examining the numbers, it becomes clear how votes translate into parliamentary seats under the first-past-the-post system, highlighting both the overall level of support received by each party and the disparities that sometimes occur between vote share and seat allocation.\n\n\n\n\n\n\n\n\nUK General Election Results (2010–2024)\n\n\nElection\nParty\nSeats\nTotal Votes\nVote Share\nSeats Share\nSeat Change\n\n\n\n\n2010\nConservative\n306\n7299297\n52.1%\n36.1%\n97\n\n\n2010\nLabour\n258\n5000921\n35.7%\n29.0%\n-91\n\n\n2010\nLib Dem\n57\n1231743\n8.8%\n23.0%\n-5\n\n\n2010\nSNP\n6\n88352\n0.6%\n1.7%\n-1\n\n\n2015\nConservative\n330\n8357169\n54.5%\n36.9%\n24\n\n\n2015\nLabour\n232\n5013526\n32.7%\n30.4%\n-26\n\n\n2015\nLib Dem\n8\n135732\n0.9%\n7.9%\n-49\n\n\n2015\nSNP\n56\n1409229\n9.2%\n4.7%\n50\n\n\n2017\nConservative\n317\n9261441\n51.5%\n42.4%\n-13\n\n\n2017\nLabour\n262\n7339955\n40.8%\n40.0%\n30\n\n\n2017\nLib Dem\n12\n270664\n1.5%\n74.0%\n4\n\n\n2017\nSNP\n35\n602331\n3.4%\n3.0%\n-21\n\n\n2019\nConservative\n365\n10615080\n43.6%\n56.2%\n48\n\n\n2019\nLabour\n202\n5072998\n32.1%\n31.1%\n-60\n\n\n2019\nLib Dem\n11\n279864\n11.5%\n1.7%\n-1\n\n\n2019\nSNP\n48\n1053037\n3.9%\n7.4%\n13\n\n\n2024\nConservative\n121\n2120108\n23.7%\n18.6%\n-244\n\n\n2024\nLabour\n411\n7573446\n33.7%\n63.2%\n209\n\n\n2024\nLib Dem\n72\n1616862\n12.2%\n11.1%\n61\n\n\n2024\nSNP\n9\n142939\n2.5%\n1.4%\n-39",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Elections Visualised</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
     ]
   },
   {
     "objectID": "results.html#technical-notes",
     "href": "results.html#technical-notes",
-    "title": "1  Results - Elections Visualised",
+    "title": "1  Results - Mapping UK General Elections (2010–2024)",
     "section": "Technical Notes",
     "text": "Technical Notes\nAll data used in this analysis are publicly available. Election results come from the House of Commons Library, while constituency boundary information is provided by the Office for National Statistics (ONS), using shapefiles for December 2021 and July 2024. These sources allow for a consistent and reliable combination of electoral and spatial data.\nChapter # will provide a detailed walkthrough of the data cleaning and processing steps, showing how the figures and tables presented here were produced and ensuring the analysis is fully reproducible.\nData Sources:\n- House of Commons Library election results (1918-2024)\n- ONS constituency boundary shapefiles (December 2021, July 2024)\nMethods:\n- Spatial analysis using R packages - All analysis is fully reproducible with code available on GitHub",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Elections Visualised</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
     ]
   },
   {
     "objectID": "results.html#footnotes",
     "href": "results.html#footnotes",
-    "title": "1  Results - Elections Visualised",
+    "title": "1  Results - Mapping UK General Elections (2010–2024)",
     "section": "",
     "text": "House of Commons Library, General Election 2010, https://commonslibrary.parliament.uk/research-briefings/sn06404/↩︎\nHouse of Commons Library, General Election 2015, https://commonslibrary.parliament.uk/research-briefings/cbp-7186/↩︎\nHouse of Commons Library, General Election 2017, https://commonslibrary.parliament.uk/research-briefings/cbp-7979/↩︎\nHouse of Commons Library, General Election 2019, https://commonslibrary.parliament.uk/research-briefings/cbp-8749/↩︎\nHouse of Commons Library, General Election 2024, https://commonslibrary.parliament.uk/research-briefings/cbp-10009/↩︎",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Elections Visualised</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
     ]
   },
   {
@@ -132,11 +132,11 @@
   {
     "objectID": "spatial-regression.html",
     "href": "spatial-regression.html",
-    "title": "3  Spatial Regression",
+    "title": "3  Methods - Spatial Regression",
     "section": "",
     "text": "Because spatial data violate key assumptions of standard regression frameworks, particularly the independence of observations, dedicated network- or spatial-methods are essential both for valid inference and substantive insight. Dedicated spatial and network methods therefore play a dual role: not only do they correct statistical bias, but they also enable us to detect and model complex interdependencies that would otherwise remain hidden.\nSpatial analysis helps reveal how support for policies diffuses, why certain regions diverge from national trajectories, and how local context shapes outcomes.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Spatial Regression</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods - Spatial Regression</span>"
     ]
   }
 ]
