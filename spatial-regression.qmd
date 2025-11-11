@@ -20,7 +20,7 @@ This section is currently under development and will be added soon. It will intr
 
 Applied examples using UK parliamentary constituency data will illustrate how these models capture spatial dependence and regional effects in electoral outcomes.  
 
-This section draws heavily on Tobias Rüttenauer’s Geodata and Spatial Regression materials @ruttenauerGeodataSpatialRegression2025.
+This section draws heavily on Tobias @ruttenauerGeodataSpatialRegression2025’s Geodata and Spatial Regression materials
 
 :::
 
