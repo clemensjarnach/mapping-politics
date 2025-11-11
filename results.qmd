@@ -1,6 +1,7 @@
-# Results - Mapping UK General Elections (2010–2024)
+# Results - Mapping UK General Elections
 
-## Five UK General Elections Compared
+## Five UK General Elections Compared (2010–2024)
+
 
 ```{r setup}
 #| include: false

@@ -840,3 +840,4 @@ map_interactive_2024 <- leaflet(map_df_2024) %>%
     opacity = 0.7
   )
 
+

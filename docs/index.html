@@ -175,7 +175,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./results.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Results - Mapping UK General Elections (2010–2024)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Results - Mapping UK General Elections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -252,10 +252,11 @@ div.csl-indent {
 <h1 class="unnumbered">Introduction</h1>
 <p>Many social, economic, and environmental processes are fundamentally spatial. Consequently, many questions in the social sciences require geographic/spatial data. Electoral behaviour, migration flows, or protest mobilisation often display strong spatial, and social-network clustering. What happens in one constituency or local area frequently shapes outcomes in nearby places. As articulated in <span class="citation" data-cites="toblerComputerMovieSimulating1970">Tobler (<a href="references.html#ref-toblerComputerMovieSimulating1970" role="doc-biblioref">1970</a>)</span>’s famous first law of geography,</p>
 <blockquote class="blockquote">
-<p>“everything is related to everything else, but near things are more related than distant things.” Such relationships may arise from spatial spillovers, diffusion processes, or shared contextual influences across neighbouring areas.</p>
+<p>“everything is related to everything else, but near things are more related than distant things.”</p>
 </blockquote>
-<p>Recognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. Transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.</p>
-<p>This project applies these principles to the case of UK general elections, illustrating how geospatial techniques and visual analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.</p>
+<p>Such relationships may arise from spatial spillovers, diffusion processes, or shared contextual influences across neighbouring areas.</p>
+<p>Recognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. For example, transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.</p>
+<p>This project applies these principles to the case of UK general elections, illustrating how geospatial analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.</p>
 <p>This course material is designed to lay foundations for spatial analysis and practical application. It demonstrates spatial workflows, visualisation techniques and modelling strategies in R.</p>
 <section id="goals" class="level2">
 <h2 class="anchored" data-anchor-id="goals">Goals</h2>
@@ -283,7 +284,7 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Results - Elections Visualised</strong></td>
+<td><strong>Results - Mapping UK General Elections</strong></td>
 <td>Key maps and insights at a glance</td>
 </tr>
 <tr class="even">
@@ -304,8 +305,8 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>The section <strong>Results - Elections Visualised</strong> presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.</p>
-<p>The section <strong>Methods - Visualising Elections</strong> offers a structured, tutorial-style walkthrough of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, mapmaking, and exploratory spatial analysis.</p>
+<p>The section <strong>Results - Mapping UK General Elections</strong> presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.</p>
+<p>The section <strong>Methods - Visualising Elections</strong> offers a structured, tutorial-style walk through of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, map making, and exploratory spatial analysis.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -788,8 +789,8 @@ Tobler, W. R. 1970. <span>“A <span>Computer Movie Simulating Urban Growth</spa
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./results.html" class="pagination-link" aria-label="Results - Mapping UK General Elections (2010–2024)">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Results - Mapping UK General Elections (2010–2024)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./results.html" class="pagination-link" aria-label="Results - Mapping UK General Elections">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Results - Mapping UK General Elections</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
@@ -797,47 +798,49 @@ Tobler, W. R. 1970. <span>“A <span>Computer Movie Simulating Urban Growth</spa
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Many social, economic, and environmental processes are fundamentally spatial. Consequently, many questions in the social sciences require geographic/spatial data. Electoral behaviour, migration flows, or protest mobilisation often display strong spatial, and social-network clustering. What happens in one constituency or local area frequently shapes outcomes in nearby places. As articulated in @toblerComputerMovieSimulating1970's famous first law of geography,</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; “everything is related to everything else, but near things are more related than distant things.” Such relationships may arise from spatial spillovers, diffusion processes, or shared contextual influences across neighbouring areas.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; “everything is related to everything else, but near things are more related than distant things.” </span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Recognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. Transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Such relationships may arise from spatial spillovers, diffusion processes, or shared contextual influences across neighbouring areas.</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>This project applies these principles to the case of UK general elections, illustrating how geospatial techniques and visual analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Recognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. For example, transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This course material is designed to lay foundations for spatial analysis and practical application. It demonstrates spatial workflows, visualisation techniques and modelling strategies in R.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This project applies these principles to the case of UK general elections, illustrating how geospatial analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Goals</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>This course material is designed to lay foundations for spatial analysis and practical application. It demonstrates spatial workflows, visualisation techniques and modelling strategies in R.</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>This project is designed to demonstrate and teach how to:</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Goals</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>acquire, clean, and integrate election and geospatial data in R</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>work effectively with spatial data using packages such as <span class="in">`sf`</span>, <span class="in">`mapview`</span>, <span class="in">`tmap`</span>, <span class="in">`spatialreg`</span> and <span class="in">`leaflet`</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>produce high-quality static and interactive maps</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>communicate complex political and spatial patterns clearly and analytically</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>develop transparent and reproducible data-science workflows</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contents</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>This project is designed to demonstrate and teach how to:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>acquire, clean, and integrate election and geospatial data in R</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>work effectively with spatial data using packages such as <span class="in">`sf`</span>, <span class="in">`mapview`</span>, <span class="in">`tmap`</span>, <span class="in">`spatialreg`</span> and <span class="in">`leaflet`</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>produce high-quality static and interactive maps</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>communicate complex political and spatial patterns clearly and analytically</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>develop transparent and reproducible data-science workflows</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Section <span class="pp">|</span> Focus <span class="pp">|</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------------------|--------------------------------------------------|</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Results - Elections Visualised** <span class="pp">|</span> Key maps and insights at a glance <span class="pp">|</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Methods – Visualising Elections** <span class="pp">|</span> Data sources, processing steps, reproducibility notes <span class="pp">|</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Spatial Regression** <span class="pp">|</span> Clean, well-commented code for Spatial Regression workflows in R <span class="pp">|</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Extras** <span class="pp">|</span> Additional resources, code appendix <span class="pp">|</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **References** <span class="pp">|</span> Data and literature sources <span class="pp">|</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>The section **Results - Elections Visualised** presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contents</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Section <span class="pp">|</span> Focus <span class="pp">|</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------------------|--------------------------------------------------|</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Results - Mapping UK General Elections** <span class="pp">|</span> Key maps and insights at a glance <span class="pp">|</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Methods – Visualising Elections** <span class="pp">|</span> Data sources, processing steps, reproducibility notes <span class="pp">|</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Spatial Regression** <span class="pp">|</span> Clean, well-commented code for Spatial Regression workflows in R <span class="pp">|</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Extras** <span class="pp">|</span> Additional resources, code appendix <span class="pp">|</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **References** <span class="pp">|</span> Data and literature sources <span class="pp">|</span></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>The section **Methods - Visualising Elections** offers a structured, tutorial-style walkthrough of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, mapmaking, and exploratory spatial analysis.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>The section **Results - Mapping UK General Elections** presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.</span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### Work in Progress</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>This project is actively being developed. Additional sections and teaching materials will be added over time.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>The section **Methods - Visualising Elections** offers a structured, tutorial-style walk through of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, map making, and exploratory spatial analysis.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### Work in Progress</span></span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>For example, the Spatial Regression chapter, along with extended applied examples and exercises, will be released soon.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>This project is actively being developed. Additional sections and teaching materials will be added over time.</span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>If you are viewing this as part of a course or portfolio submission, please check back for updates as new content and learning resources are added.</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>For example, the Spatial Regression chapter, along with extended applied examples and exercises, will be released soon.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>If you are viewing this as part of a course or portfolio submission, please check back for updates as new content and learning resources are added.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

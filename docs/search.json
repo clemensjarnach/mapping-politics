@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Mapping Politics: Spatial Data Science for Politics",
     "section": "",
-    "text": "Introduction\nMany social, economic, and environmental processes are fundamentally spatial. Consequently, many questions in the social sciences require geographic/spatial data. Electoral behaviour, migration flows, or protest mobilisation often display strong spatial, and social-network clustering. What happens in one constituency or local area frequently shapes outcomes in nearby places. As articulated in Tobler (1970)’s famous first law of geography,\nRecognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. Transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.\nThis project applies these principles to the case of UK general elections, illustrating how geospatial techniques and visual analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.\nThis course material is designed to lay foundations for spatial analysis and practical application. It demonstrates spatial workflows, visualisation techniques and modelling strategies in R.",
+    "text": "Introduction\nMany social, economic, and environmental processes are fundamentally spatial. Consequently, many questions in the social sciences require geographic/spatial data. Electoral behaviour, migration flows, or protest mobilisation often display strong spatial, and social-network clustering. What happens in one constituency or local area frequently shapes outcomes in nearby places. As articulated in Tobler (1970)’s famous first law of geography,\nSuch relationships may arise from spatial spillovers, diffusion processes, or shared contextual influences across neighbouring areas.\nRecognising these spatial and networked relationships is essential when studying societal change or sustainability transitions. For example, transformations in energy systems, food systems, and climate adaptation do not occur in isolation; they diffuse across regions and communities through social influence, institutional structures, infrastructure, and resource flows. Similar processes underpin other phenomena, from innovation and political mobilisation to disease transmission and environmental shocks. Understanding where and how these patterns emerge allows us to better identify clusters of vulnerability or resilience, diffusion pathways, and points of intervention.\nThis project applies these principles to the case of UK general elections, illustrating how geospatial analytics can illuminate the evolution of political coalitions, territorial cleavages, and long-term shifts in voting behaviour. While the empirical focus here is electoral, the analytical tools are general and relevant to the study of other forms of structural societal change.\nThis course material is designed to lay foundations for spatial analysis and practical application. It demonstrates spatial workflows, visualisation techniques and modelling strategies in R.",
     "crumbs": [
       "Introduction"
     ]
@@ -24,7 +24,7 @@
     "href": "index.html#contents",
     "title": "Mapping Politics: Spatial Data Science for Politics",
     "section": "Contents",
-    "text": "Contents\n\n\n\n\n\n\n\nSection\nFocus\n\n\n\n\nResults - Elections Visualised\nKey maps and insights at a glance\n\n\nMethods – Visualising Elections\nData sources, processing steps, reproducibility notes\n\n\nSpatial Regression\nClean, well-commented code for Spatial Regression workflows in R\n\n\nExtras\nAdditional resources, code appendix\n\n\nReferences\nData and literature sources\n\n\n\nThe section Results - Elections Visualised presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.\nThe section Methods - Visualising Elections offers a structured, tutorial-style walkthrough of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, mapmaking, and exploratory spatial analysis.\n\n\n\n\n\n\nWork in Progress\n\n\n\nThis project is actively being developed. Additional sections and teaching materials will be added over time.\nFor example, the Spatial Regression chapter, along with extended applied examples and exercises, will be released soon.\nIf you are viewing this as part of a course or portfolio submission, please check back for updates as new content and learning resources are added.\n\n\n\n\n\n\n\n\nTobler, W. R. 1970. “A Computer Movie Simulating Urban Growth in the Detroit Region.” Economic Geography 46 (June): 234. https://doi.org/10.2307/143141.",
+    "text": "Contents\n\n\n\n\n\n\n\nSection\nFocus\n\n\n\n\nResults - Mapping UK General Elections\nKey maps and insights at a glance\n\n\nMethods – Visualising Elections\nData sources, processing steps, reproducibility notes\n\n\nSpatial Regression\nClean, well-commented code for Spatial Regression workflows in R\n\n\nExtras\nAdditional resources, code appendix\n\n\nReferences\nData and literature sources\n\n\n\nThe section Results - Mapping UK General Elections presents a comparative overview of five UK general elections, highlighting how spatial analysis can help reveal political change and geographical realignments. Maps, tables, and charts are used to guide students and readers through key electoral and regional trends.\nThe section Methods - Visualising Elections offers a structured, tutorial-style walk through of the workflow used to create these outputs. It introduces practical techniques for working with geospatial and electoral data in R, including data cleaning, map making, and exploratory spatial analysis.\n\n\n\n\n\n\nWork in Progress\n\n\n\nThis project is actively being developed. Additional sections and teaching materials will be added over time.\nFor example, the Spatial Regression chapter, along with extended applied examples and exercises, will be released soon.\nIf you are viewing this as part of a course or portfolio submission, please check back for updates as new content and learning resources are added.\n\n\n\n\n\n\n\n\nTobler, W. R. 1970. “A Computer Movie Simulating Urban Growth in the Detroit Region.” Economic Geography 46 (June): 234. https://doi.org/10.2307/143141.",
     "crumbs": [
       "Introduction"
     ]
@@ -32,71 +32,71 @@
   {
     "objectID": "results.html",
     "href": "results.html",
-    "title": "1  Results - Mapping UK General Elections (2010–2024)",
+    "title": "1  Results - Mapping UK General Elections",
     "section": "",
-    "text": "Five UK General Elections Compared\nThis is a data-driven exploration of United Kingdom General Elections from 2010 to 2024 Through interactive maps, comparative visualizations, and reproducible code, it explores how Britain’s electoral geography has transformed over the course of 14 years of political turmoil, from coalition government to Brexit and finally to Labour’s landslide victory in 2024.",
+    "text": "Five UK General Elections Compared (2010–2024)\nThis is a data-driven exploration of United Kingdom General Elections from 2010 to 2024 Through interactive maps, comparative visualizations, and reproducible code, it explores how Britain’s electoral geography has transformed over the course of 14 years of political turmoil, from coalition government to Brexit and finally to Labour’s landslide victory in 2024.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections</span>"
     ]
   },
   {
     "objectID": "results.html#who-won-in-which-area",
     "href": "results.html#who-won-in-which-area",
-    "title": "1  Results - Mapping UK General Elections (2010–2024)",
+    "title": "1  Results - Mapping UK General Elections",
     "section": "Who won in which area?",
     "text": "Who won in which area?\nExplore how political power has shifted across UK constituencies over time. Click on each tab to see which party won in each election year. Hover over a constituency to see its detailed results and compare the geographic changes that unfolded election by election.\n\n20102015201720192024\n\n\n\n\n\n\n\n\nCoalition Politics: No single party achieved a majority. The resulting Conservative-Liberal Democrat coalition was the first in Britain since 1945.\n\n\n\n\n\n\n\n\nThe SNP Surge: Scotland turned yellow as the SNP swept from 6 to 56 seats, while the Liberal Democrats collapsed from 57 to just 8 seats following the coalition years.\n\n\n\n\n\n\n\n\nBrexit Stalemate: Theresa May’s snap election backfired, losing the Conservative majority and another hung parliament which produced gridlock and a government dependent on DUP support.\n\n\n\n\n\n\n\n\n“Get Brexit Done”: Boris Johnson’s “Get Brexit Done” campaign delivered the largest Conservative majority since 1987.\n\n\n\n\n\n\n\n\nHistoric Realignment: Labour’s landslide victory masked a fragmented electorate—the lowest winning vote share for a majority government in British history.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections</span>"
     ]
   },
   {
     "objectID": "results.html#seat-distribution-the-story-in-numbers",
     "href": "results.html#seat-distribution-the-story-in-numbers",
-    "title": "1  Results - Mapping UK General Elections (2010–2024)",
+    "title": "1  Results - Mapping UK General Elections",
     "section": "Seat Distribution: The Story in Numbers",
     "text": "Seat Distribution: The Story in Numbers\nThese bar charts reveal the stark differences between elections. Notice how the Conservative majority in 2015 gave way to a hung parliament in 2017, followed by a landslide in 2019, before a dramatic reversal in 2024.\n\n20102015201720192024\n\n\n\n\n\n\n\n\nResult: Hung parliament (326 seats needed for majority)\nGovernment: Conservative-Liberal Democrat coalition\nConsequence: First coalition government since WWII era\nThe 2010 election produced Britain’s first hung parliament since 1974. With Conservatives on 306 seats and Labour on 258, neither could govern alone. The resulting Conservative-Liberal Democrat coalition—Britain’s first peacetime coalition since 1945—implemented aggressive austerity measures that would reshape public services and define a decade of politics.1\n\n\n\n\n\n\n\n\nResult: Conservative majority (with 12-seat margin as 326 seats were needed to win)\nShock: SNP won 56 of 59 Scottish seats; Lib Dems reduced to 8\nConsequence: EU referendum pledge activated\nDavid Cameron’s Conservatives defied polls to win an outright majority—but the real story was Scotland with the SNP’s surge from 6 to 56 seats. The Liberal Democrats, punished for coalition compromises, collapsed from 57 seats to 8. Cameron’s victory came with a promise: an EU referendum.2\n\n\n\n\n\n\n\n\nResult: Hung parliament\nIrony: Both major parties increased their vote share, but neither won a majority\nConsequence: Parliamentary Brexit deadlock for two years\nTheresa May called a snap election seeking a mandate for her Brexit negotiations. Instead, she lost her majority. Both major parties increased their vote share, yet produced a hung parliament. The result: two years of parliamentary paralysis, and several failed Brexit votes.3\n\n\n\n\n\n\n\n\nResult: Conservative majority (80-seat margin)\nBreakthrough: “Red Wall” constituencies switched to Conservative\nConsequence: Brexit delivered January 2020\nBoris Johnson broke the parliamentary deadlock with a blunt and effective message: “Get Brexit Done.” The result was emphatic: an 80-seat Conservative majority driven largely by gains in former Labour heartlands. The so-called Red Wall (long-standing Labour constituencies across the North of England, the Midlands, and Wales) shifted Conservative after generations of loyalty. Brexit was formally completed in January 2020, but the electoral realignment it revealed reshaped Britain’s political geography and would continue to influence voting patterns well beyond that moment.4\n\n\n\n\n\n\n\n\nResult: Labour landslide (174-seat majority)\nHistoric low: Conservatives reduced to 121 seats—their worst result ever\nConsequence: Lib Dems’ best performance since 2010 with 72 seats\nLabour won a massive 174-seat majority, but with just 33.7% of the vote, the lowest share ever for a majority-winning party. The Conservatives suffered their worst defeat in history, reduced to 121 seats. But the headline story was fragmentation: the two main parties’ combined vote share fell to 57.4%, the lowest in modern history. Reform UK, the Greens, and the Liberal Democrats all gained ground. Britain’s two-party system, already cracking, may have broken for good.5",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections</span>"
     ]
   },
   {
     "objectID": "results.html#votes-vs-seats",
     "href": "results.html#votes-vs-seats",
-    "title": "1  Results - Mapping UK General Elections (2010–2024)",
+    "title": "1  Results - Mapping UK General Elections",
     "section": "Votes vs Seats",
     "text": "Votes vs Seats\nThe contrast between these two charts — one showing seat distribution across the last five general elections and the other illustrating vote share — highlights a central feature of Britain’s first-past-the-post electoral system. Vote share reveals public opinion; seat distribution reveals who governs.\n\nSeatsVote Share\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParticularity interesting is the the election in 2024, Labour increased their vote share by just 1.6 percentage points (32.1% → 33.7%) yet more than doubled their seats (202 → 411). Meanwhile, the Liberal Democrats achieved 12.2% of the national vote but won only 11% of seats. This geographic concentration effect is a defining feature of first-past-the-post: victory depends not on total votes, but on winning individual constituencies. The SNP demonstrates this perfectly, with under 4% of the UK vote in 2015 and 2019, they secured 8-9% of seats by dominating Scotland.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections</span>"
     ]
   },
   {
     "objectID": "results.html#data-table",
     "href": "results.html#data-table",
-    "title": "1  Results - Mapping UK General Elections (2010–2024)",
+    "title": "1  Results - Mapping UK General Elections",
     "section": "Data Table",
     "text": "Data Table\nThe table below summarises the data already visualised in the preceding figures, showing seat distribution and vote shares for the top four political parties in UK general elections from 2010 to 2024. By examining the numbers, it becomes clear how votes translate into parliamentary seats under the first-past-the-post system, highlighting both the overall level of support received by each party and the disparities that sometimes occur between vote share and seat allocation.\n\n\n\n\n\n\n\n\nUK General Election Results (2010–2024)\n\n\nElection\nParty\nSeats\nTotal Votes\nVote Share\nSeats Share\nSeat Change\n\n\n\n\n2010\nConservative\n306\n7299297\n52.1%\n36.1%\n97\n\n\n2010\nLabour\n258\n5000921\n35.7%\n29.0%\n-91\n\n\n2010\nLib Dem\n57\n1231743\n8.8%\n23.0%\n-5\n\n\n2010\nSNP\n6\n88352\n0.6%\n1.7%\n-1\n\n\n2015\nConservative\n330\n8357169\n54.5%\n36.9%\n24\n\n\n2015\nLabour\n232\n5013526\n32.7%\n30.4%\n-26\n\n\n2015\nLib Dem\n8\n135732\n0.9%\n7.9%\n-49\n\n\n2015\nSNP\n56\n1409229\n9.2%\n4.7%\n50\n\n\n2017\nConservative\n317\n9261441\n51.5%\n42.4%\n-13\n\n\n2017\nLabour\n262\n7339955\n40.8%\n40.0%\n30\n\n\n2017\nLib Dem\n12\n270664\n1.5%\n74.0%\n4\n\n\n2017\nSNP\n35\n602331\n3.4%\n3.0%\n-21\n\n\n2019\nConservative\n365\n10615080\n43.6%\n56.2%\n48\n\n\n2019\nLabour\n202\n5072998\n32.1%\n31.1%\n-60\n\n\n2019\nLib Dem\n11\n279864\n11.5%\n1.7%\n-1\n\n\n2019\nSNP\n48\n1053037\n3.9%\n7.4%\n13\n\n\n2024\nConservative\n121\n2120108\n23.7%\n18.6%\n-244\n\n\n2024\nLabour\n411\n7573446\n33.7%\n63.2%\n209\n\n\n2024\nLib Dem\n72\n1616862\n12.2%\n11.1%\n61\n\n\n2024\nSNP\n9\n142939\n2.5%\n1.4%\n-39",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections</span>"
     ]
   },
   {
     "objectID": "results.html#technical-notes",
     "href": "results.html#technical-notes",
-    "title": "1  Results - Mapping UK General Elections (2010–2024)",
+    "title": "1  Results - Mapping UK General Elections",
     "section": "Technical Notes",
     "text": "Technical Notes\nAll data used in this analysis are publicly available. Election results come from the House of Commons Library, while constituency boundary information is provided by the Office for National Statistics (ONS), using shapefiles for December 2021 and July 2024. These sources allow for a consistent and reliable combination of electoral and spatial data.\nChapter # will provide a detailed walkthrough of the data cleaning and processing steps, showing how the figures and tables presented here were produced and ensuring the analysis is fully reproducible.\nData Sources:\n- House of Commons Library election results (1918-2024)\n- ONS constituency boundary shapefiles (December 2021, July 2024)\nMethods:\n- Spatial analysis using R packages - All analysis is fully reproducible with code available on GitHub",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections</span>"
     ]
   },
   {
     "objectID": "results.html#footnotes",
     "href": "results.html#footnotes",
-    "title": "1  Results - Mapping UK General Elections (2010–2024)",
+    "title": "1  Results - Mapping UK General Elections",
     "section": "",
     "text": "House of Commons Library, General Election 2010, https://commonslibrary.parliament.uk/research-briefings/sn06404/↩︎\nHouse of Commons Library, General Election 2015, https://commonslibrary.parliament.uk/research-briefings/cbp-7186/↩︎\nHouse of Commons Library, General Election 2017, https://commonslibrary.parliament.uk/research-briefings/cbp-7979/↩︎\nHouse of Commons Library, General Election 2019, https://commonslibrary.parliament.uk/research-briefings/cbp-8749/↩︎\nHouse of Commons Library, General Election 2024, https://commonslibrary.parliament.uk/research-briefings/cbp-10009/↩︎",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections (2010–2024)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Results - Mapping UK General Elections</span>"
     ]
   },
   {
@@ -104,7 +104,7 @@
     "href": "methods.html",
     "title": "2  Methods - Visualising Elections",
     "section": "",
-    "text": "Why geospatial analysis?\nPolitical change is spatial. Electoral outcomes are shaped by place — communities, demographics, and identities linked to geography. Mapping makes these shifts legible, bringing together:\nThis project illustrates how spatial analytics can enrich research in political sociology and public policy.",
+    "text": "Why geospatial analysis?\nPolitical change is spatial. Electoral outcomes are shaped by place — communities, demographics, and identities linked to geography. Mapping makes these shifts legible, bringing together:\nThis project illustrates how spatial analytics can enrich research in political sociology and public policy.\nIt demonstrates how to analyse and visualise UK General Election results from 2010-2024 using R. You’ll learn to work with electoral data, create spatial visualisations, and produce both static and interactive maps showing political change across constituencies.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "methods.html#why-geospatial-analysis",
     "title": "2  Methods - Visualising Elections",
     "section": "",
-    "text": "data science\nvisual communication\npolitical analysis\nreproducibility and open research",
+    "text": "data science\nvisual communication\npolitical analysis\nreproducibility and open research\n\n\n\n\nWhat You’ll Learn\n\nLoading and cleaning electoral data from Excel files\nStandardising constituency identifiers across different boundary systems\nCreating time-series visualisations of seat counts and vote shares\nJoining electoral data to geographic shapefiles\nProducing choropleth maps showing election results\nBuilding interactive maps with Leaflet\n\n\n\nData Context: Constituency Boundaries\nUK parliamentary constituency boundaries have been revised periodically:\n\n1997, 2005, 2010: Major boundary reviews implemented\n2024: Latest boundary changes for the 2024 election\n\nImportant: Elections from 2010-2019 use the 2021 constituency boundaries for consistency. The 2024 election uses updated 2024 boundaries. This means historical results are projected onto current boundaries for visual comparison.\nThe data uses different identifier codes: - 1997-2001: PCA codes - 2005: Mixed (PCA for England/Wales/NI; ONS for Scotland) - 2010-2019: ONS codes - 2024: ONS codes (new boundaries)\n\n\nData Sources\n\nHouse of Commons Library: Historical election results (1918-2024)\nONS: Constituency boundary shapefiles (Dec 2021 and July 2024)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "spatial-regression.html",
     "title": "3  Methods - Spatial Regression",
     "section": "",
-    "text": "Because spatial data violate key assumptions of standard regression frameworks, particularly the independence of observations, dedicated network- or spatial-methods are essential both for valid inference and substantive insight. Dedicated spatial and network methods therefore play a dual role: not only do they correct statistical bias, but they also enable us to detect and model complex interdependencies that would otherwise remain hidden.\nSpatial analysis helps reveal how support for policies diffuses, why certain regions diverge from national trajectories, and how local context shapes outcomes.",
+    "text": "Because spatial data violate key assumptions of standard regression frameworks, particularly the independence of observations, dedicated network- or spatial-methods are essential both for valid inference and substantive insight. Dedicated spatial and network methods therefore play a dual role: not only do they correct statistical bias, but they also enable us to detect and model complex interdependencies that would otherwise remain hidden.\nSpatial analysis helps reveal how support for policies diffuses, why certain regions diverge from national trajectories, and how local context shapes outcomes.\n\n\n\n\n\n\nWork in Progress\n\n\n\nThis section is currently under development and will be added soon. It will introduce key spatial regression techniques for analysing UK election data, including:\n\nSpatial autocorrelation and Moran’s I\n\nSpatial Error Model (SEM)\n\nSpatially Lagged X Model (SLX)\n\nSpatial Autoregressive Model (SAR)\n\nSpatial Durbin Model (SDM)\n\nCombined Spatial Autocorrelation Model (SAC)\n\nGeneral Nesting Spatial Model (GNS)\n\nGeographically Weighted Regression (GWR)\n\nApplied examples using UK parliamentary constituency data will illustrate how these models capture spatial dependence and regional effects in electoral outcomes.\nThis section draws heavily on Tobias Rüttenauer’s Geodata and Spatial Regression materials Rüttenauer (2025).\n\n\n\n\n\n\n\n\nRüttenauer, Tobias. 2025. “Geodata & Spatial Regression.” https://ruettenauer.github.io/Geodata_Spatial_Regression/.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods - Spatial Regression</span>"
     ]
@@ -137,6 +137,176 @@
     "text": "Tobler, W. R. 1970. “A Computer Movie Simulating Urban\nGrowth in the Detroit Region.” Economic\nGeography 46 (June): 234. https://doi.org/10.2307/143141.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "methods.html#setup",
+    "href": "methods.html#setup",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Setup",
+    "text": "Setup\n\nInstall and Load Required Packages\n\n# Define required packages\nwant &lt;- c(\"data.table\", \"fixest\", \"ggiraph\", \"gt\", \"here\", \"leaflet\",\n          \"lubridate\", \"janitor\", \"purrr\", \"readxl\", \"scales\", \n          \"sf\", \"tidyverse\")\n\n# Check which packages need installing\nhave &lt;- want %in% rownames(installed.packages())\n\n# Install missing packages\nif (any(!have)) install.packages(want[!have])\n\n# Load all packages\njunk &lt;- lapply(want, library, character.only = TRUE)\n\n# Clean up\nrm(have, want, junk)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#part-1-aggregate-trends---seats-and-vote-shares",
+    "href": "methods.html#part-1-aggregate-trends---seats-and-vote-shares",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Part 1: Aggregate Trends - Seats and Vote Shares",
+    "text": "Part 1: Aggregate Trends - Seats and Vote Shares\nWe’ll start by examining overall trends before diving into constituency-level data.\n\nLoad Summary Data\n\n# Load the pre-compiled seats table\nseats_table &lt;- readxl::read_excel(\n  here::here(\"data\", \"uk_general_election_seats_table.xlsx\")\n) %&gt;%\n  janitor::clean_names()\n\n# View the structure\nprint(seats_table)\n\n# A tibble: 20 × 7\n   election party        seats total_votes vote_share seats_share\n      &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt;       &lt;dbl&gt;      &lt;dbl&gt;       &lt;dbl&gt;\n 1     2010 Conservative   306     7299297     52.1        0.361 \n 2     2010 Labour         258     5000921     35.7        0.29  \n 3     2010 Lib Dem         57     1231743      8.78       0.23  \n 4     2010 SNP              6       88352      0.63       0.017 \n 5     2015 Conservative   330     8357169     54.5        0.369 \n 6     2015 Labour         232     5013526     32.7        0.304 \n 7     2015 Lib Dem          8      135732      0.885      0.079 \n 8     2015 SNP             56     1409229      9.19       0.047 \n 9     2017 Conservative   317     9261441     51.5        0.424 \n10     2017 Labour         262     7339955     40.8        0.4   \n11     2017 Lib Dem         12      270664      1.5        0.74  \n12     2017 SNP             35      602331      3.35       0.03  \n13     2019 Conservative   365    10615080     43.6        0.562 \n14     2019 Labour         202     5072998     32.1        0.311 \n15     2019 Lib Dem         11      279864     11.5        0.0169\n16     2019 SNP             48     1053037      3.9        0.0738\n17     2024 Conservative   121     2120108     23.7        0.186 \n18     2024 Labour         411     7573446     33.7        0.632 \n19     2024 Lib Dem         72     1616862     12.2        0.111 \n20     2024 SNP              9      142939      2.5        0.0138\n# ℹ 1 more variable: seats_change &lt;dbl&gt;\n\n\n\n\nExtract Seat Counts\n\nseat_counts &lt;- seats_table %&gt;% \n  select(election, party, seats)\n\nprint(seat_counts)\n\n# A tibble: 20 × 3\n   election party        seats\n      &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt;\n 1     2010 Conservative   306\n 2     2010 Labour         258\n 3     2010 Lib Dem         57\n 4     2010 SNP              6\n 5     2015 Conservative   330\n 6     2015 Labour         232\n 7     2015 Lib Dem          8\n 8     2015 SNP             56\n 9     2017 Conservative   317\n10     2017 Labour         262\n11     2017 Lib Dem         12\n12     2017 SNP             35\n13     2019 Conservative   365\n14     2019 Labour         202\n15     2019 Lib Dem         11\n16     2019 SNP             48\n17     2024 Conservative   121\n18     2024 Labour         411\n19     2024 Lib Dem         72\n20     2024 SNP              9\n\n\n\n\nDefine Party Colours\nConsistent colour coding helps readers quickly identify parties:\n\nparty_colors &lt;- c(\n  \"Conservative\" = \"#0087DC\",\n  \"Labour\" = \"#DC241f\",\n  \"Lib Dem\" = \"#ffa500\",\n  \"SNP\" = \"#dad420\"\n)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#visualisation-1-seat-distribution-over-time",
+    "href": "methods.html#visualisation-1-seat-distribution-over-time",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Visualisation 1: Seat Distribution Over Time",
+    "text": "Visualisation 1: Seat Distribution Over Time\nThis line chart shows how seat counts have changed across elections.\n\nseat_counts_plot &lt;- ggplot(seat_counts, \n                           aes(x = election, y = seats, \n                               color = party, group = party)) +\n  geom_line(linewidth = 1.2, alpha = 0.9) +\n  geom_point(size = 4, alpha = 0.9) +\n  geom_point(size = 2.5, color = \"white\") +  # White center\n  \n  # Add value labels\n  geom_text(aes(label = seats), \n            vjust = -1.2, \n            size = 3.5, \n            fontface = \"bold\",\n            show.legend = FALSE) +\n  \n  # Styling\n  scale_color_manual(\n    values = party_colors, \n    name = \"Party\",\n    labels = c(\"Conservative\", \"Labour\", \"Liberal Democrats\", \"SNP\")\n  ) +\n  scale_x_continuous(breaks = c(2010, 2015, 2017, 2019, 2024)) +\n  scale_y_continuous(limits = c(0, 450), breaks = seq(0, 450, 50)) +\n  \n  # Labels\n  labs(\n    title = \"UK General Election Results: Seat Distribution 2010-2024\",\n    subtitle = \"The dramatic shift from coalition to Conservative dominance to Labour's 2024 landslide\",\n    x = \"Election Year\",\n    y = \"Number of Seats\",\n    caption = \"Data: House of Commons Library | 650 total seats\"\n  ) +\n  \n  # Theme\n  theme_minimal(base_size = 12) +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16, margin = margin(b = 5)),\n    plot.subtitle = element_text(size = 11, color = \"grey40\", margin = margin(b = 15)),\n    plot.caption = element_text(color = \"grey50\", size = 9, hjust = 0),\n    panel.grid.minor = element_blank(),\n    panel.grid.major.x = element_blank(),\n    legend.position = \"top\",\n    legend.title = element_text(face = \"bold\"),\n    plot.margin = margin(15, 15, 15, 15)\n  )\n\nseat_counts_plot\n\n\n\n\n\n\n\nFigure 2.1: UK General Election seat distribution 2010-2024",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#visualisation-2-vote-share-over-time",
+    "href": "methods.html#visualisation-2-vote-share-over-time",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Visualisation 2: Vote Share Over Time",
+    "text": "Visualisation 2: Vote Share Over Time\nVote share tells a slightly different story than seats due to the first-past-the-post system.\n\n# Extract vote share data\nvote_share_data &lt;- seats_table %&gt;% \n  select(election, party, vote_share)\n\n# Create visualisation\nvote_share_plot &lt;- ggplot(vote_share_data, \n                          aes(x = election, y = vote_share, \n                              color = party, group = party)) +\n  geom_line(linewidth = 1.2, alpha = 0.9) +\n  geom_point(size = 4, alpha = 0.9) +\n  geom_point(size = 2.5, color = \"white\") +\n  \n  # Add percentage labels\n  geom_text(aes(label = paste0(round(vote_share, 1), \"%\")), \n            vjust = -1.2, \n            size = 3.5, \n            fontface = \"bold\",\n            show.legend = FALSE) +\n  \n  scale_color_manual(\n    values = party_colors, \n    name = \"Party\",\n    labels = c(\"Conservative\", \"Labour\", \"Liberal Democrats\", \"SNP\")\n  ) +\n  scale_x_continuous(breaks = c(2010, 2015, 2017, 2019, 2024)) +\n  scale_y_continuous(\n    limits = c(0, 70), \n    breaks = seq(0, 70, 10),\n    labels = function(x) paste0(x, \"%\")\n  ) +\n  \n  labs(\n    title = \"UK General Election Results: Vote Share 2010-2024\",\n    subtitle = \"First-past-the-post distortion: vote share tells a different story than seats\",\n    x = \"Election Year\",\n    y = \"Vote Share (%)\",\n    caption = \"Data: House of Commons Library\"\n  ) +\n  \n  theme_minimal(base_size = 12) +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16, margin = margin(b = 5)),\n    plot.subtitle = element_text(size = 11, color = \"grey40\", margin = margin(b = 15)),\n    plot.caption = element_text(color = \"grey50\", size = 9, hjust = 0),\n    panel.grid.minor = element_blank(),\n    panel.grid.major.x = element_blank(),\n    legend.position = \"top\",\n    plot.margin = margin(15, 15, 15, 15)\n  )\n\nvote_share_plot\n\n\n\n\n\n\n\nFigure 2.2: UK General Election vote share 2010-2024",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#visualisation-3-bar-charts-by-election",
+    "href": "methods.html#visualisation-3-bar-charts-by-election",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Visualisation 3: Bar Charts by Election",
+    "text": "Visualisation 3: Bar Charts by Election\nBar charts provide a clear snapshot of each individual election.\n\nCreate a Reusable Function\n\ncreate_election_bar &lt;- function(year) {\n  data_year &lt;- seat_counts %&gt;% filter(election == year)\n  \n  ggplot(data_year, aes(x = party, y = seats, fill = party)) +\n    geom_col(width = 0.7, alpha = 0.9) +\n    geom_text(aes(label = seats), \n              vjust = -0.5, \n              size = 5, \n              fontface = \"bold\") +\n    scale_fill_manual(values = party_colors) +\n    scale_y_continuous(limits = c(0, 650), breaks = seq(0, 650, 50)) +\n    labs(\n      title = paste0(year, \" General Election Results\"),\n      subtitle = \"Total seats won by major parties (650 seats total)\",\n      x = NULL,\n      y = \"Number of Seats\",\n      caption = \"Data: House of Commons Library\"\n    ) +\n    theme_minimal(base_size = 14) +\n    theme(\n      plot.title = element_text(face = \"bold\", size = 18, hjust = 0.5),\n      plot.subtitle = element_text(size = 12, color = \"grey40\", hjust = 0.5),\n      legend.position = \"none\",\n      panel.grid.major.x = element_blank(),\n      panel.grid.minor = element_blank(),\n      axis.text.x = element_text(size = 12, face = \"bold\")\n    )\n}\n\n\n\nGenerate Plots for Each Election\nplot_2010 &lt;- create_election_bar(2010)\nplot_2015 &lt;- create_election_bar(2015)\nplot_2017 &lt;- create_election_bar(2017)\nplot_2019 &lt;- create_election_bar(2019)\nplot_2024 &lt;- create_election_bar(2024)\n\n# Display (2019 as example)\nplot_2019\n\n\n\n\n\n\n\n\n\nFigure 2.3: Election results by year",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#visualisation-4-interactive-bar-charts",
+    "href": "methods.html#visualisation-4-interactive-bar-charts",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Visualisation 4: Interactive Bar Charts",
+    "text": "Visualisation 4: Interactive Bar Charts\nWe can make these charts interactive using ggiraph, allowing users to hover over bars for details.\n\ncreate_election_bar_interactive &lt;- function(year) {\n  data_year &lt;- seat_counts %&gt;% \n    filter(election == year) %&gt;%\n    mutate(\n      tooltip = paste0(party, \": \", seats, \" seats\\n(\", year, \")\"),\n      data_id = party\n    )\n  \n  p &lt;- ggplot(data_year, aes(x = party, y = seats, fill = party)) +\n    geom_col_interactive(\n      aes(tooltip = tooltip, data_id = data_id),\n      width = 0.7,\n      alpha = 0.9\n    ) +\n    geom_text(aes(label = seats), vjust = -0.5, size = 5, fontface = \"bold\") +\n    scale_fill_manual(values = party_colors) +\n    scale_y_continuous(limits = c(0, 650), breaks = seq(0, 650, 50)) +\n    labs(\n      title = paste0(year, \" General Election Results\"),\n      subtitle = \"Total seats won by major parties (650 total)\",\n      x = NULL,\n      y = \"Seats\",\n      caption = \"Data: House of Commons Library\"\n    ) +\n    theme_minimal(base_size = 14) +\n    theme(\n      plot.title = element_text(face = \"bold\", size = 18, hjust = 0.5),\n      plot.subtitle = element_text(size = 12, color = \"grey40\", hjust = 0.5),\n      legend.position = \"none\",\n      panel.grid.major.x = element_blank()\n    )\n  \n  girafe(\n    ggobj = p,\n    options = list(\n      opts_hover(css = \"fill:black;\"),\n      opts_hover_inv(css = \"opacity:0.5;\"),\n      opts_tooltip(css = \"background:#222;color:white;padding:6px;border-radius:4px;\")\n    )\n  )\n}\n\n# Create interactive plot\nplot_i_2024 &lt;- create_election_bar_interactive(2024)\nplot_i_2024\n\n\n\n\n\n\n\nFigure 2.4: Interactive election results (hover to see details)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#part-2-spatial-analysis---constituency-level-maps",
+    "href": "methods.html#part-2-spatial-analysis---constituency-level-maps",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Part 2: Spatial Analysis - Constituency-Level Maps",
+    "text": "Part 2: Spatial Analysis - Constituency-Level Maps\nNow we’ll move to constituency-level data to create choropleth maps.\n\nLoad Detailed Election Data (2010-2019)\n\nfile &lt;- here::here(\"data\", \"1918-2019election_results_by_pcon.xlsx\")\n\n# Define target years\ntarget_years &lt;- c(\"2010\", \"2015\", \"2017\", \"2019\")\n\n# Function to read and clean each sheet\nread_hoc_sheet &lt;- function(sheet) {\n  raw &lt;- readxl::read_excel(\n    file,\n    sheet = sheet,\n    skip = 3,\n    col_names = TRUE\n  ) %&gt;%\n    janitor::clean_names()\n  \n  # Identify party vote columns\n  vote_cols &lt;- grep(\"_votes$\", names(raw), value = TRUE)\n  \n  # Select core columns and add election year\n  raw %&gt;%\n    select(id, constituency, electorate, total_votes, turnout,\n           all_of(vote_cols)) %&gt;%\n    mutate(election = as.integer(sheet))\n}\n\n# Read all target years\ndata_wide &lt;- purrr::map_dfr(target_years, read_hoc_sheet)\n\n# Remove empty rows\ndata_wide &lt;- data_wide %&gt;% filter(!is.na(id))\n\n\n\nCalculate Vote Shares\n\n# Create vote_share columns for each party\ndata_wide &lt;- data_wide %&gt;%\n  mutate(\n    across(\n      .cols = ends_with(\"_votes\"),\n      .fns = ~ .x / total_votes,\n      .names = \"{.col}_share\"\n    )\n  )\n\n# Check the result\ndata_wide %&gt;%\n  select(constituency, total_votes, matches(\"conservative|labour\")) %&gt;%\n  head()\n\n# A tibble: 6 × 6\n  constituency           total_votes conservative_votes labour_votes\n  &lt;chr&gt;                        &lt;dbl&gt;              &lt;dbl&gt;        &lt;dbl&gt;\n1 ALDERSHOT                    45384              21203         5489\n2 ALDRIDGE-BROWNHILLS          38634              22913         7647\n3 ALTRINCHAM AND SALE W…       49393              24176        11073\n4 AMBER VALLEY                 45958              17746        17210\n5 ARUNDEL AND SOUTH DOW…       55982              32333         4835\n6 ASHFIELD                     48196              10698        16239\n# ℹ 2 more variables: conservative_votes_share &lt;dbl&gt;,\n#   labour_votes_share &lt;dbl&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#standardising-constituency-codes",
+    "href": "methods.html#standardising-constituency-codes",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Standardising Constituency Codes",
+    "text": "Standardising Constituency Codes\nSome constituencies have multiple IDs. We prioritise ONS codes (starting with letters) for consistency.\n\n# Create constituency-to-ID mapping\nconstituency_pairs_df &lt;- data_wide %&gt;%\n  select(id, constituency) %&gt;%\n  unique()\n\n# Prioritise ONS codes\nunique_constituency_map_prioritized &lt;- constituency_pairs_df %&gt;%\n  mutate(is_ons_code = str_detect(id, \"^[A-Za-z]\")) %&gt;%\n  arrange(desc(is_ons_code)) %&gt;%\n  group_by(constituency) %&gt;%\n  slice_head(n = 1) %&gt;%\n  ungroup() %&gt;%\n  select(-is_ons_code)\n\n# Update data with standardised IDs\ndata_wide &lt;- data_wide %&gt;%\n  left_join(\n    unique_constituency_map_prioritized, \n    by = \"constituency\",\n    suffix = c(\"_old\", \"\")\n  )",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#pivot-to-long-format",
+    "href": "methods.html#pivot-to-long-format",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Pivot to Long Format",
+    "text": "Pivot to Long Format\nConvert from wide format (one column per party) to long format (one row per party per constituency).\n\ndata &lt;- data_wide %&gt;%\n  pivot_longer(\n    cols = matches(\"(votes$|votes_share$)\"),\n    names_to = c(\"party\", \".value\"),\n    names_pattern = \"(.*)_(votes|votes_share)$\"\n  ) %&gt;%\n  rename(\n    ons_code = id,\n    vote_share = votes_share\n  ) %&gt;%\n  filter(party != \"total\") %&gt;%\n  select(ons_code, constituency, election, party, votes, vote_share, everything()) %&gt;%\n  select(-id_old)\n\n# Verify structure\ndata %&gt;% \n  filter(ons_code == \"W07000049\", election == 2019) %&gt;%\n  head()\n\n# A tibble: 6 × 8\n  ons_code  constituency election party  votes vote_share electorate\n  &lt;chr&gt;     &lt;chr&gt;           &lt;int&gt; &lt;chr&gt;  &lt;dbl&gt;      &lt;dbl&gt;      &lt;dbl&gt;\n1 W07000049 ABERAVON         2019 conse…  6518     0.206       50750\n2 W07000049 ABERAVON         2019 liber…  1072     0.0339      50750\n3 W07000049 ABERAVON         2019 labour 17008     0.538       50750\n4 W07000049 ABERAVON         2019 ukip      NA    NA           50750\n5 W07000049 ABERAVON         2019 green    450     0.0142      50750\n6 W07000049 ABERAVON         2019 snp       NA    NA           50750\n# ℹ 1 more variable: turnout &lt;dbl&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#load-geographic-data",
+    "href": "methods.html#load-geographic-data",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Load Geographic Data",
+    "text": "Load Geographic Data\n\n# Load pre-processed shapefile\nuk_const_2021 &lt;- readRDS(\n  here(\"data\", \"processed\", \"uk_constituencies_2021_simplified.rds\")\n)\n\n# Rename to match our data\nuk_const &lt;- uk_const_2021 %&gt;%\n  rename(ons_code = pcon21cd)\n\nNote: The shapefile has been pre-processed and simplified to reduce file size. Original source: ONS December 2021 boundaries.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#identify-winners-by-constituency",
+    "href": "methods.html#identify-winners-by-constituency",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Identify Winners by Constituency",
+    "text": "Identify Winners by Constituency\n\n# Find winning party in each constituency for each election\nwinners &lt;- data %&gt;%\n  group_by(election, ons_code) %&gt;%\n  slice_max(votes, n = 1, with_ties = FALSE) %&gt;%\n  ungroup()\n\n# Join to geographic data\nmap_df &lt;- uk_const %&gt;%\n  left_join(winners, by = \"ons_code\")",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#define-party-colours-for-maps",
+    "href": "methods.html#define-party-colours-for-maps",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Define Party Colours for Maps",
+    "text": "Define Party Colours for Maps\n\nparty_cols &lt;- c(\n  \"conservative\" = \"#0087DC\",\n  \"labour\" = \"#DC241f\",\n  \"liberal_democrats\" = \"#FDBB30\",\n  \"snp\" = \"#FFFF00\",\n  \"plaid_cymru\" = \"#005B54\",\n  \"green\" = \"#52C152\",\n  \"brexit\" = \"#12B6CF\",\n  \"reform_uk\" = \"#00B5E2\",\n  \"ukip\" = \"#6D3177\",\n  \"independent\" = \"grey60\",\n  \"dup\" = \"#D46A4C\",\n  \"sinn_fein\" = \"#326760\", \n  \"sdlp\" = \"#2AA82C\",\n  \"uup\" = \"#48A5EE\",\n  \"alliance\" = \"#F6CB2F\",\n  \"other\" = \"grey80\"\n)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#create-static-choropleth-maps",
+    "href": "methods.html#create-static-choropleth-maps",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Create Static Choropleth Maps",
+    "text": "Create Static Choropleth Maps\n# Function to create map for any year\ncreate_static_map &lt;- function(year) {\n  map_df %&gt;%\n    filter(election == year) %&gt;%\n    ggplot(aes(fill = party)) +\n    geom_sf(colour = \"white\", linewidth = 0.1) +\n    scale_fill_manual(values = party_cols, na.value = \"grey90\") +\n    theme_minimal() +\n    labs(\n      title = paste0(year, \" UK General Election\"),\n      subtitle = \"Winning party by constituency\",\n      fill = \"Party\"\n    ) +\n    theme(\n      plot.title = element_text(face = \"bold\", size = 14),\n      plot.subtitle = element_text(size = 11, color = \"grey40\")\n    )\n}\n\n# Generate maps\nmap_2010 &lt;- create_static_map(2010)\nmap_2019 &lt;- create_static_map(2019)\n\n# Display\nmap_2010\nmap_2019\n\n\n\n\n\n\n\n\n\nFigure 2.5: Election results by constituency\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.6: Election results by constituency\n\n\n\n\n\n\n\nSpatial Patterns\nNotice how: - Scotland shifted from Labour (2010) to SNP (2015+) - “Red Wall” constituencies in Northern England flipped Conservative (2019) - Urban centres remained Labour strongholds - Liberal Democrats hold scattered rural/suburban seats",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#create-interactive-maps-with-leaflet",
+    "href": "methods.html#create-interactive-maps-with-leaflet",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Create Interactive Maps with Leaflet",
+    "text": "Create Interactive Maps with Leaflet\nInteractive maps allow users to explore individual constituencies.\n\ncreate_interactive_map &lt;- function(election_year) {\n  # Filter and transform data\n  map_year &lt;- map_df %&gt;%\n    filter(election == election_year) %&gt;%\n    st_transform(4326)  # Web Mercator for Leaflet\n  \n  # Create colour palette\n  pal &lt;- colorFactor(\n    palette = party_cols,\n    domain = map_year$party,\n    levels = names(party_cols)\n  )\n  \n  # Build leaflet map\n  leaflet(map_year) %&gt;%\n    addProviderTiles(providers$CartoDB.Positron) %&gt;%\n    addPolygons(\n      fillColor = ~pal(party),\n      fillOpacity = 0.7,\n      color = \"white\",\n      weight = 0.5,\n      opacity = 1,\n      highlight = highlightOptions(\n        weight = 2,\n        color = \"#666\",\n        fillOpacity = 0.9,\n        bringToFront = TRUE\n      ),\n      label = ~paste0(pcon21nm, \": \", party),\n      popup = ~paste0(\n        \"&lt;strong&gt;\", pcon21nm, \"&lt;/strong&gt;&lt;br/&gt;\",\n        \"Party: \", party, \"&lt;br/&gt;\",\n        \"Votes: \", format(votes, big.mark = \",\"), \"&lt;br/&gt;\",\n        \"Vote Share: \", round(vote_share, 1), \"%\"\n      ),\n      labelOptions = labelOptions(\n        style = list(\"font-weight\" = \"normal\", padding = \"3px 8px\"),\n        textsize = \"13px\",\n        direction = \"auto\"\n      )\n    ) %&gt;%\n    addLegend(\n      position = \"bottomright\",\n      pal = pal,\n      values = ~party,\n      title = paste(election_year, \"Winner\"),\n      opacity = 0.7\n    )\n}\n\n# Create interactive map for 2019\nmap_interactive_2019 &lt;- create_interactive_map(2019)\nmap_interactive_2019\n\n\n\n\n\n\n\nFigure 2.7: Interactive 2019 election results (click constituencies for details)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#part-3-the-2024-election-new-boundaries",
+    "href": "methods.html#part-3-the-2024-election-new-boundaries",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Part 3: The 2024 Election (New Boundaries)",
+    "text": "Part 3: The 2024 Election (New Boundaries)\nThe 2024 election uses new constituency boundaries, requiring separate processing.\n\nLoad 2024 Data\n\n# Read 2024 results\ndata_wide_2024 &lt;- readxl::read_excel(\n  here::here(\"data\", \"1918-2019election_results_by_pcon.xlsx\"),\n  sheet = \"2024\",\n  skip = 3,\n  col_names = TRUE\n) %&gt;%\n  janitor::clean_names() %&gt;%\n  filter(!is.na(id)) %&gt;%\n  select(id, constituency, electorate, total_votes, turnout, \n         ends_with(\"_votes\")) %&gt;%\n  mutate(\n    election = 2024L,\n    across(\n      ends_with(\"_votes\"),\n      ~ .x / total_votes,\n      .names = \"{.col}_share\"\n    )\n  )\n\n# Standardise IDs\ndata_wide_2024 &lt;- data_wide_2024 %&gt;%\n  group_by(constituency) %&gt;%\n  slice_min(order_by = !str_detect(id, \"^[A-Za-z]\"), n = 1, with_ties = FALSE) %&gt;%\n  ungroup() %&gt;%\n  rename(ons_code = id)\n\n# Pivot to long format\ndata_2024 &lt;- data_wide_2024 %&gt;%\n  pivot_longer(\n    cols = ends_with(c(\"_votes\", \"_votes_share\")),\n    names_to = c(\"party\", \".value\"),\n    names_pattern = \"(.*)_(votes|votes_share)$\"\n  ) %&gt;%\n  rename(vote_share = votes_share) %&gt;%\n  filter(party != \"total\") %&gt;%\n  select(ons_code, constituency, election, party, votes, vote_share, everything())\n\n\n\nLoad 2024 Boundaries\n\n# Load pre-processed 2024 boundaries\nuk_const_2024 &lt;- readRDS(\n  here(\"data\", \"processed\", \"uk_constituencies_2024_simplified.rds\")\n)\n\n# Identify winners\nwinners_2024 &lt;- data_2024 %&gt;%\n  group_by(ons_code) %&gt;%\n  slice_max(votes, n = 1, with_ties = FALSE) %&gt;%\n  ungroup()\n\n# Join to geography\nmap_df_2024 &lt;- uk_const_2024 %&gt;%\n  left_join(winners_2024, by = \"ons_code\")\n\n\n\nInteractive 2024 Map\n\n# Transform for web mapping\nmap_df_2024_web &lt;- map_df_2024 %&gt;% st_transform(4326)\n\n# Create colour palette\npal_2024 &lt;- colorFactor(\n  palette = party_cols,\n  domain = map_df_2024_web$party,\n  levels = names(party_cols)\n)\n\n# Build interactive map\nmap_interactive_2024 &lt;- leaflet(map_df_2024_web) %&gt;%\n  addProviderTiles(providers$CartoDB.Positron) %&gt;%\n  addPolygons(\n    fillColor = ~pal_2024(party),\n    fillOpacity = 0.7,\n    color = \"white\",\n    weight = 0.5,\n    opacity = 1,\n    highlight = highlightOptions(\n      weight = 2,\n      color = \"#666\",\n      fillOpacity = 0.9,\n      bringToFront = TRUE\n    ),\n    label = ~paste0(pcon24nm, \": \", party),\n    popup = ~paste0(\n      \"&lt;strong&gt;\", pcon24nm, \"&lt;/strong&gt;&lt;br/&gt;\",\n      \"Party: \", party, \"&lt;br/&gt;\",\n      \"Votes: \", format(votes, big.mark = \",\"), \"&lt;br/&gt;\",\n      \"Vote Share: \", round(vote_share, 1), \"%\"\n    )\n  ) %&gt;%\n  addLegend(\n    position = \"bottomright\",\n    pal = pal_2024,\n    values = ~party,\n    title = \"Winning Party\",\n    opacity = 0.7\n  )\n\nmap_interactive_2024\n\n\n\n\n\n\n\nFigure 2.8: Interactive 2024 election results",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#references",
+    "href": "methods.html#references",
+    "title": "2  Methods - Visualising Elections",
+    "section": "References",
+    "text": "References\nHouse of Commons Library (2024). General Election Results, 1918-2024. Retrieved from https://commonslibrary.parliament.uk/research-briefings/cbp-8647/\nOffice for National Statistics (2021, 2024). Westminster Parliamentary Constituencies Boundaries. Available via Open Geography Portal.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#session-info",
+    "href": "methods.html#session-info",
+    "title": "2  Methods - Visualising Elections",
+    "section": "Session Info",
+    "text": "Session Info\n\nsessionInfo()\n\nR version 4.1.2 (2021-11-01)\nPlatform: x86_64-apple-darwin17.0 (64-bit)\nRunning under: macOS 26.0.1\n\nMatrix products: default\nBLAS:   /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRblas.0.dylib\nLAPACK: /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRlapack.dylib\n\nlocale:\n[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods  \n[7] base     \n\nother attached packages:\n [1] forcats_1.0.0     stringr_1.5.1     dplyr_1.1.4      \n [4] readr_2.1.5       tidyr_1.3.1       tibble_3.2.1     \n [7] ggplot2_3.5.2     tidyverse_2.0.0   sf_1.0-12        \n[10] scales_1.3.0      readxl_1.4.4      purrr_1.0.1      \n[13] janitor_2.2.1     lubridate_1.9.4   leaflet_2.2.3    \n[16] here_1.0.1        gt_1.1.0          ggiraph_0.8.7    \n[19] fixest_0.12.1     data.table_1.17.0\n\nloaded via a namespace (and not attached):\n [1] jsonlite_1.9.1          splines_4.1.2          \n [3] Formula_1.2-5           cellranger_1.1.0       \n [5] yaml_2.3.10             numDeriv_2016.8-1.1    \n [7] pillar_1.10.1           lattice_0.22-6         \n [9] glue_1.8.0              uuid_1.2-1             \n[11] digest_0.6.37           snakecase_0.11.1       \n[13] leaflet.providers_2.0.0 colorspace_2.1-1       \n[15] sandwich_3.1-1          htmltools_0.5.8.1      \n[17] Matrix_1.5-1            pkgconfig_2.0.3        \n[19] xtable_1.8-4            mvtnorm_1.1-3          \n[21] tzdb_0.4.0              timechange_0.3.0       \n[23] emmeans_1.10.7          proxy_0.4-27           \n[25] farver_2.1.2            generics_0.1.3         \n[27] withr_3.0.2             TH.data_1.1-3          \n[29] cli_3.6.5               survival_3.8-3         \n[31] magrittr_2.0.3          estimability_1.5.1     \n[33] evaluate_1.0.3          fs_1.6.5               \n[35] nlme_3.1-162            MASS_7.3-54            \n[37] xml2_1.4.0              class_7.3-23           \n[39] dreamerr_1.4.0          tools_4.1.2            \n[41] hms_1.1.3               lifecycle_1.0.4        \n[43] multcomp_1.4-28         munsell_0.5.1          \n[45] jquerylib_0.1.4         compiler_4.1.2         \n[47] e1071_1.7-16            systemfonts_1.0.4      \n[49] rlang_1.1.6             classInt_0.4-9         \n[51] units_0.8-2             grid_4.1.2             \n[53] rstudioapi_0.17.1       htmlwidgets_1.6.4      \n[55] crosstalk_1.2.1         rmarkdown_2.29         \n[57] gtable_0.3.6            codetools_0.2-20       \n[59] DBI_1.2.3               R6_2.6.1               \n[61] zoo_1.8-13              knitr_1.49             \n[63] utf8_1.2.4              fastmap_1.2.0          \n[65] rprojroot_2.0.4         stringmagic_1.1.2      \n[67] KernSmooth_2.23-20      stringi_1.8.4          \n[69] Rcpp_1.0.14             vctrs_0.6.5            \n[71] tidyselect_1.2.1        xfun_0.51              \n[73] coda_0.19-4.1",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methods - Visualising Elections</span>"
     ]
   }
 ]

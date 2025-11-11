@@ -3,3 +3,26 @@
 Because spatial data violate key assumptions of standard regression frameworks, particularly the independence of observations, dedicated network- or spatial-methods are essential both for valid inference and substantive insight. Dedicated spatial and network methods therefore play a dual role: not only do they correct statistical bias, but they also enable us to detect and model complex interdependencies that would otherwise remain hidden.
 
 Spatial analysis helps reveal how support for policies diffuses, why certain regions diverge from national trajectories, and how local context shapes outcomes.
+
+::: {.callout-warning}
+## Work in Progress
+
+This section is currently under development and will be added soon. It will introduce key spatial regression techniques for analysing UK election data, including:
+
+- **Spatial autocorrelation** and **Moran’s I**  
+- **Spatial Error Model (SEM)**  
+- **Spatially Lagged X Model (SLX)**  
+- **Spatial Autoregressive Model (SAR)**  
+- **Spatial Durbin Model (SDM)**  
+- **Combined Spatial Autocorrelation Model (SAC)**  
+- **General Nesting Spatial Model (GNS)**  
+- **Geographically Weighted Regression (GWR)**  
+
+Applied examples using UK parliamentary constituency data will illustrate how these models capture spatial dependence and regional effects in electoral outcomes.  
+
+This section draws heavily on Tobias Rüttenauer’s Geodata and Spatial Regression materials @ruttenauerGeodataSpatialRegression2025.
+
+:::
+
+
+
